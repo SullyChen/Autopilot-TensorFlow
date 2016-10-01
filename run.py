@@ -8,6 +8,9 @@ sess = tf.InteractiveSession()
 saver = tf.train.Saver()
 saver.restore(sess, "save/model.ckpt")
 
+img = cv2.imread('steering_wheel_image.jpg',0)
+rows,cols = img.shape
+
 cap = cv2.VideoCapture(0)
 while(cv2.waitKey(10) != ord('q')):
     ret, frame = cap.read()
@@ -16,6 +19,9 @@ while(cv2.waitKey(10) != ord('q')):
     call("clear")
     print("Predicted steering angle: " + str(degrees) + " degrees")
     cv2.imshow('frame', frame)
+    M = cv2.getRotationMatrix2D((cols/2,rows/2),-degrees,1)
+    dst = cv2.warpAffine(img,M,(cols,rows))
+    cv2.imshow("steering wheel", dst)
 
 cap.release()
 cv2.destroyAllWindows()
