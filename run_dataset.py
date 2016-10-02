@@ -13,7 +13,7 @@ rows,cols = img.shape
 
 smoothed_angle = 0
 
-i = 10000
+i = 0
 while(cv2.waitKey(10) != ord('q')):
     full_image = scipy.misc.imread("driving_dataset/" + str(i) + ".jpg", mode="RGB")
     image = scipy.misc.imresize(full_image[-150:], [66, 200]) / 255.0
