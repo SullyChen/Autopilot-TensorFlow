@@ -1,6 +1,9 @@
+import os
 import tensorflow as tf
 import driving_data
 import model
+
+LOGDIR = './save'
 
 sess = tf.InteractiveSession()
 
@@ -18,5 +21,8 @@ for i in range(int(driving_data.num_images * 0.3)):
     print("step %d, train loss %g"%(i, loss.eval(feed_dict={
          model.x:xs, model.y_: ys, model.keep_prob: 1.0})))
   if i % 100 == 0:
-    save_path = saver.save(sess, "save/model.ckpt")
-    print("Model saved in file: %s" % save_path)
+    if not os.path.exists(LOGDIR):
+            os.makedirs(LOGDIR)
+    checkpoint_path = os.path.join(LOGDIR, "model.ckpt")
+    filename = saver.save(sess, checkpoint_path)
+    print("Model saved in file: %s" % filename)
