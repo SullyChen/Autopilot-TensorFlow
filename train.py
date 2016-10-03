@@ -15,10 +15,11 @@ saver = tf.train.Saver()
 
 #train over the dataset about 30 times
 for i in range(int(driving_data.num_images * 0.3)):
-  xs, ys = driving_data.LoadBatch(100)
+  xs, ys = driving_data.LoadTrainBatch(100)
   train_step.run(feed_dict={model.x: xs, model.y_: ys, model.keep_prob: 0.8})
   if i % 10 == 0:
-    print("step %d, train loss %g"%(i, loss.eval(feed_dict={
+    xs, ys = driving_data.LoadValBatch(100)
+    print("step %d, val loss %g"%(i, loss.eval(feed_dict={
          model.x:xs, model.y_: ys, model.keep_prob: 1.0})))
   if i % 100 == 0:
     if not os.path.exists(LOGDIR):
