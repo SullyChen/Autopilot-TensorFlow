@@ -8,7 +8,7 @@ LOGDIR = './save'
 sess = tf.InteractiveSession()
 
 loss = tf.reduce_mean(tf.square(tf.sub(model.y_, model.y)))
-train_step = tf.train.GradientDescentOptimizer(0.01).minimize(loss)
+train_step = tf.train.AdamOptimizer(1e-4).minimize(loss)
 sess.run(tf.initialize_all_variables())
 
 saver = tf.train.Saver()
