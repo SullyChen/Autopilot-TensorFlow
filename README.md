@@ -10,4 +10,4 @@ Use `python run.py` to run the model on a live webcam feed
 
 Use `python run_dataset.py` to run the model on the dataset
 
-To visualize training using Tensorboard, run the command line: `tensorboard --logdir=./logs`, then open http://0.0.0.0:6006/ into your web browser.
+To visualize training using Tensorboard use `tensorboard --logdir=./logs`, then open http://0.0.0.0:6006/ into your web browser.
