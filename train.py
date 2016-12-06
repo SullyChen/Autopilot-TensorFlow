@@ -7,7 +7,12 @@ LOGDIR = './save'
 
 sess = tf.InteractiveSession()
 
-loss = tf.reduce_mean(tf.square(tf.sub(model.y_, model.y)))
+L2NormConst = 0.001
+
+train_vars = tf.trainable_variables()
+
+loss = tf.reduce_mean(tf.square(tf.sub(model.y_, model.y))
+        + tf.add_n([tf.nn.l2_loss(v) for v in train_vars]) * L2NormConst)
 train_step = tf.train.AdamOptimizer(1e-4).minimize(loss)
 sess.run(tf.initialize_all_variables())
 
@@ -34,7 +39,7 @@ for epoch in range(epochs):
       xs, ys = driving_data.LoadValBatch(batch_size)
       loss_value = loss.eval(feed_dict={model.x:xs, model.y_: ys, model.keep_prob: 1.0})
       print("Epoch: %d, Step: %d, Loss: %g" % (epoch, epoch * batch_size + i, loss_value))
-    
+
     # write logs at every iteration
     summary = merged_summary_op.eval(feed_dict={model.x:xs, model.y_: ys, model.keep_prob: 1.0})
     summary_writer.add_summary(summary, epoch * batch_size + i)
