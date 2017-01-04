@@ -11,7 +11,7 @@ L2NormConst = 0.001
 
 train_vars = tf.trainable_variables()
 
-loss = tf.reduce_mean(tf.square(tf.sub(model.y_, model.y)))
+loss = tf.reduce_mean(tf.square(tf.sub(model.y_, model.y))) \ 
         + tf.add_n([tf.nn.l2_loss(v) for v in train_vars]) * L2NormConst
 train_step = tf.train.AdamOptimizer(1e-4).minimize(loss)
 sess.run(tf.initialize_all_variables())
