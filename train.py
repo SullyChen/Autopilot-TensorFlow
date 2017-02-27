@@ -19,14 +19,15 @@ sess.run(tf.global_variables_initializer())
 # create a summary to monitor cost tensor
 tf.summary.scalar("loss", loss)
 # merge all summaries into a single op
-merged_summary_op = tf.merge_all_summaries()
-#merged_summary_op = tf.merge_summary()
+#merged_summary_op = tf.merge_all_summaries()
+merged_summary_op = tf.summary.merge_all()
 
 saver = tf.train.Saver()
 
 # op to write logs to Tensorboard
 logs_path = './logs'
-summary_writer = tf.train.SummaryWriter(logs_path, graph=tf.get_default_graph())
+#summary_writer = tf.train.SummaryWriter(logs_path, graph=tf.get_default_graph())
+summary_writer = tf.summary.FileWriter(logs_path, graph=tf.get_default_graph())
 
 epochs = 30
 batch_size = 100
