@@ -57,13 +57,30 @@ h_fc1 = tf.nn.relu(tf.matmul(h_conv5_flat, W_fc1) + b_fc1)
 keep_prob = tf.placeholder(tf.float32)
 h_fc1_drop = tf.nn.dropout(h_fc1, keep_prob)
 
+#FCL12
+W_fc12 = weight_variable([1164, 800])
+b_fc12 = bias_variable([800])
+
+h_fc12 = tf.nn.relu(tf.matmul(h_fc1_drop, W_fc12) + b_fc12)
+
+h_fc12_drop = tf.nn.dropout(h_fc12, keep_prob)
+
 #FCL 2
-W_fc2 = weight_variable([1164, 100])
+W_fc2 = weight_variable([800, 100])
 b_fc2 = bias_variable([100])
 
-h_fc2 = tf.nn.relu(tf.matmul(h_fc1_drop, W_fc2) + b_fc2)
+h_fc2 = tf.nn.relu(tf.matmul(h_fc12_drop, W_fc2) + b_fc2)
 
 h_fc2_drop = tf.nn.dropout(h_fc2, keep_prob)
+
+
+#FCL 2
+#W_fc2 = weight_variable([1164, 100])
+#b_fc2 = bias_variable([100])
+
+#h_fc2 = tf.nn.relu(tf.matmul(h_fc1_drop, W_fc2) + b_fc2)
+
+#h_fc2_drop = tf.nn.dropout(h_fc2, keep_prob)
 
 #FCL 3
 W_fc3 = weight_variable([100, 50])
