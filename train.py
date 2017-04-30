@@ -1,5 +1,6 @@
 import os
 import tensorflow as tf
+from tensorflow.core.protobuf import saver_pb2
 import driving_data
 import model
 
@@ -20,7 +21,7 @@ tf.scalar_summary("loss", loss)
 # merge all summaries into a single op
 merged_summary_op = tf.merge_all_summaries()
 
-saver = tf.train.Saver()
+saver = tf.train.Saver(write_version = saver_pb2.SaverDef.V1)
 
 # op to write logs to Tensorboard
 logs_path = './logs'
