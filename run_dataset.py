@@ -4,6 +4,8 @@ import model
 import cv2
 from subprocess import call
 
+NUM_FILES = 7148
+
 sess = tf.InteractiveSession()
 saver = tf.train.Saver()
 saver.restore(sess, "save/model.ckpt")
@@ -14,7 +16,7 @@ rows,cols = img.shape
 smoothed_angle = 0
 
 i = 0
-while(cv2.waitKey(10) != ord('q')):
+while(cv2.waitKey(10) != ord('q') and i <= NUM_FILES):
     full_image = scipy.misc.imread("driving_dataset/" + str(i) + ".jpg", mode="RGB")
     image = scipy.misc.imresize(full_image[-150:], [66, 200]) / 255.0
     degrees = model.y.eval(feed_dict={model.x: [image], model.keep_prob: 1.0})[0][0] * 180.0 / scipy.pi
