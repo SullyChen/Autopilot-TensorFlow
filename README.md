@@ -8,6 +8,8 @@ Use `python train.py` to train the model
 
 Use `python run.py` to run the model on a live webcam feed
 
-Use `python run_dataset.py` to run the model on the dataset
+Use `python run_dataset.py 'driving_dataset'` to run the model on the sample driving dataset.
+
+Use `ffmpeg -i youtube_dataset.mp4 -r 25 youtube_dataset/%0d.jpg` followed by `python run_dataset.py 'youtube_dataset'` to test the model on an existing dashcam footage [downloaded from YouTube](https://www.onlinevideoconverter.com/video-converter).
 
 To visualize training using Tensorboard use `tensorboard --logdir=./logs`, then open http://0.0.0.0:6006/ into your web browser.
