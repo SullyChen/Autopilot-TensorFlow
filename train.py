@@ -12,20 +12,20 @@ L2NormConst = 0.001
 
 train_vars = tf.trainable_variables()
 
-loss = tf.reduce_mean(tf.square(tf.sub(model.y_, model.y))) + tf.add_n([tf.nn.l2_loss(v) for v in train_vars]) * L2NormConst
+loss = tf.reduce_mean(tf.square(tf.subtract(model.y_, model.y))) + tf.add_n([tf.nn.l2_loss(v) for v in train_vars]) * L2NormConst
 train_step = tf.train.AdamOptimizer(1e-4).minimize(loss)
 sess.run(tf.initialize_all_variables())
 
 # create a summary to monitor cost tensor
-tf.scalar_summary("loss", loss)
+tf.summary.scalar("loss", loss)
 # merge all summaries into a single op
-merged_summary_op = tf.merge_all_summaries()
+merged_summary_op = tf.summary.merge_all()
 
 saver = tf.train.Saver(write_version = saver_pb2.SaverDef.V1)
 
 # op to write logs to Tensorboard
 logs_path = './logs'
-summary_writer = tf.train.SummaryWriter(logs_path, graph=tf.get_default_graph())
+summary_writer = tf.summary.FileWriter(logs_path, graph=tf.get_default_graph())
 
 epochs = 30
 batch_size = 100
