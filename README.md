@@ -16,3 +16,6 @@ Use `python run.py` to run the model on a live webcam feed
 Use `python run_dataset.py` to run the model on the dataset
 
 To visualize training using Tensorboard use `tensorboard --logdir=./logs`, then open http://0.0.0.0:6006/ into your web browser.
+
+# Cited in
+Pan, X., You, Y., Wang, Z., & Lu, C. (2017, September 26). Virtual to Real Reinforcement Learning for Autonomous Driving. Retrieved from [https://arxiv.org/abs/1704.03952](https://arxiv.org/pdf/1704.03952.pdf)
