@@ -19,3 +19,5 @@ To visualize training using Tensorboard use `tensorboard --logdir=./logs`, then 
 
 # Cited in
 Pan, X., You, Y., Wang, Z., & Lu, C. (2017, September 26). Virtual to Real Reinforcement Learning for Autonomous Driving. Retrieved from [https://arxiv.org/abs/1704.03952](https://arxiv.org/pdf/1704.03952.pdf)
+
+https://medium.com/@maxdeutsch/how-to-build-a-self-driving-car-in-one-month-d52df48f5b07
