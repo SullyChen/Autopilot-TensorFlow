@@ -23,3 +23,11 @@ D. Qian et al., "End-to-End Learning Driver Policy using Moments Deep Neural Net
 Pan, X., You, Y., Wang, Z., & Lu, C. (2017, September 26). Virtual to Real Reinforcement Learning for Autonomous Driving. Retrieved from [https://arxiv.org/abs/1704.03952](https://arxiv.org/pdf/1704.03952.pdf)
 
 https://medium.com/@maxdeutsch/how-to-build-a-self-driving-car-in-one-month-d52df48f5b07
+
+https://mc.ai/self-driving-car-on-indian-roads/
+
+http://on-demand.gputechconf.com/gtc/2018/presentation/s8748-simulate-and-validate-your-dnn-inference-with-catia-before-adas-industrial-deployment.pdf
+
+https://www.ctolib.com/amp/cyanamous-Self-Driving-Car-.html
+
+Message me if I've missed anything!
