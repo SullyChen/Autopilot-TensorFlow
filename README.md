@@ -17,7 +17,9 @@ Use `python run_dataset.py` to run the model on the dataset
 
 To visualize training using Tensorboard use `tensorboard --logdir=./logs`, then open http://0.0.0.0:6006/ into your web browser.
 
-# Cited in
+# Acknowledged/Cited in
+D. Qian et al., "End-to-End Learning Driver Policy using Moments Deep Neural Network," 2018 IEEE International Conference on Robotics and Biomimetics (ROBIO), Kuala Lumpur, Malaysia, 2018, pp. 1533-1538.
+
 Pan, X., You, Y., Wang, Z., & Lu, C. (2017, September 26). Virtual to Real Reinforcement Learning for Autonomous Driving. Retrieved from [https://arxiv.org/abs/1704.03952](https://arxiv.org/pdf/1704.03952.pdf)
 
 https://medium.com/@maxdeutsch/how-to-build-a-self-driving-car-in-one-month-d52df48f5b07
