@@ -85,4 +85,4 @@ h_fc4_drop = tf.nn.dropout(h_fc4, keep_prob)
 W_fc5 = weight_variable([10, 1])
 b_fc5 = bias_variable([1])
 
-y = tf.mul(tf.atan(tf.matmul(h_fc4_drop, W_fc5) + b_fc5), 2) #scale the atan output
+y = tf.multiply(tf.atan(tf.matmul(h_fc4_drop, W_fc5) + b_fc5), 2) #scale the atan output
