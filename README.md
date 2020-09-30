@@ -26,6 +26,8 @@ Pan, X., You, Y., Wang, Z., & Lu, C. (2017). Virtual to Real Reinforcement Learn
 
 Xu, N., Tan, B., & Kong, B. (2018). Autonomous Driving in Reality with Reinforcement Learning and Image Translation.
 
+Jiang J., Wang C., Chattopadhyay S., Zhang W. (2020) Road Context-Aware Intrusion Detection System for Autonomous Cars. In: Zhou J., Luo X., Shen Q., Xu Z. (eds) Information and Communications Security. ICICS 2019. Lecture Notes in Computer Science, vol 11999. Springer, Cham. 
+
 https://medium.com/@maxdeutsch/how-to-build-a-self-driving-car-in-one-month-d52df48f5b07
 
 https://mc.ai/self-driving-car-on-indian-roads/
