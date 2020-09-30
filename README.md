@@ -28,6 +28,8 @@ Xu, N., Tan, B., & Kong, B. (2018). Autonomous Driving in Reality with Reinforce
 
 Jiang J., Wang C., Chattopadhyay S., Zhang W. (2020) Road Context-Aware Intrusion Detection System for Autonomous Cars. In: Zhou J., Luo X., Shen Q., Xu Z. (eds) Information and Communications Security. ICICS 2019. Lecture Notes in Computer Science, vol 11999. Springer, Cham. 
 
+Machiraju, H., Balasubramanian, V.N. (2020). A Little Fog for a Large Turn. [https://arxiv.org/abs/2001.05873](https://arxiv.org/abs/2001.05873)
+
 https://medium.com/@maxdeutsch/how-to-build-a-self-driving-car-in-one-month-d52df48f5b07
 
 https://mc.ai/self-driving-car-on-indian-roads/
