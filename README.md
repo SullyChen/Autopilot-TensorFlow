@@ -30,6 +30,10 @@ Jiang J., Wang C., Chattopadhyay S., Zhang W. (2020) Road Context-Aware Intrusio
 
 Machiraju, H., Balasubramanian, V.N. (2020). A Little Fog for a Large Turn. [https://arxiv.org/abs/2001.05873](https://arxiv.org/abs/2001.05873)
 
+Olmschenk, G. (2019). Semi-super Semi-supervised Regr vised Regression with Gener ession with Generative Adversarial Networks Using Minimal Labeled Data. The Graduate Center, City University of New York. [https://core.ac.uk/download/pdf/228318691.pdf](https://core.ac.uk/download/pdf/228318691.pdf).
+
+Olmschenk, G., Zhu, Z., & Tang, H. (2019). Generalizing semi-supervised generative adversarial networks to regression using feature contrasting. Computer Vision and Image Understanding, 186, 1–12. 
+
 https://medium.com/@maxdeutsch/how-to-build-a-self-driving-car-in-one-month-d52df48f5b07
 
 https://mc.ai/self-driving-car-on-indian-roads/
