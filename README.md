@@ -18,11 +18,17 @@ Use `python run_dataset.py` to run the model on the dataset
 To visualize training using Tensorboard use `tensorboard --logdir=./logs`, then open http://0.0.0.0:6006/ into your web browser.
 
 # Acknowledged/Cited in
+H. Zhou et al., "DeepBillboard: Systematic Physical-World Testing of Autonomous Driving Systems," 2020 IEEE/ACM 42nd International Conference on Software Engineering (ICSE), 2020, pp. 347-358.
+
+Yu Shen, Laura Yu Zheng, Manli Shu, Weizi Li, Tom Goldstein, Ming Lin. "Gradient-Free Adversarial Training Against Image Corruption for Learning-based Steering." Advances in Neural Information Processing Systems 34 pre-proceedings (NeurIPS 2021).
+
+M. K. Islam, M. N. Yeasmin, C. Kaushal, M. A. Amin, M. R. Islam and M. I. Hossain Showrov, "Comparative Analysis of Steering Angle Prediction for Automated Object using Deep Neural Network," 2021 9th International Conference on Reliability, Infocom Technologies and Optimization (Trends and Future Directions) (ICRITO), 2021, pp. 1-7
+
 D. Qian et al., "End-to-End Learning Driver Policy using Moments Deep Neural Network," 2018 IEEE International Conference on Robotics and Biomimetics (ROBIO), Kuala Lumpur, Malaysia, 2018, pp. 1533-1538.
 
 O’Kelly, M., Sinha, A., Namkoong, H., Duchi, J., & Tedrake, R. (2018). Scalable End-to-End Autonomous Vehicle Testing via Rare-event Simulation.
 
-Pan, X., You, Y., Wang, Z., & Lu, C. (2017). Virtual to Real Reinforcement Learning for Autonomous Driving. [https://arxiv.org/abs/1704.03952](https://arxiv.org/pdf/1704.03952.pdf)
+Pan, X., You, Y., Wang, Z., & Lu, C. (2017). Virtual to Real Reinforcement Learning for Autonomous Driving. The British Machine Vision Conference.
 
 Xu, N., Tan, B., & Kong, B. (2018). Autonomous Driving in Reality with Reinforcement Learning and Image Translation.
 
