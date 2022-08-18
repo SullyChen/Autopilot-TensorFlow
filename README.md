@@ -18,6 +18,9 @@ Use `python run_dataset.py` to run the model on the dataset
 To visualize training using Tensorboard use `tensorboard --logdir=./logs`, then open http://0.0.0.0:6006/ into your web browser.
 
 # Acknowledged/Cited in
+
+Riboni, A; Ghioldi, N.; Candelieri, A; Borrotti, M. "Bayesian optimization and deep learning for steering wheel angle prediction." (2022) Sci. Rep., 12(1)
+
 H. Zhou et al., "DeepBillboard: Systematic Physical-World Testing of Autonomous Driving Systems," 2020 IEEE/ACM 42nd International Conference on Software Engineering (ICSE), 2020, pp. 347-358.
 
 Yu Shen, Laura Yu Zheng, Manli Shu, Weizi Li, Tom Goldstein, Ming Lin. "Gradient-Free Adversarial Training Against Image Corruption for Learning-based Steering." Advances in Neural Information Processing Systems 34 pre-proceedings (NeurIPS 2021).
