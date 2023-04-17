@@ -17,7 +17,11 @@ Use `python run_dataset.py` to run the model on the dataset
 
 To visualize training using Tensorboard use `tensorboard --logdir=./logs`, then open http://0.0.0.0:6006/ into your web browser.
 
-# Acknowledged/Cited in
+# Check out the cool work people did with this repo!
+
+Abbas, Waseem; Khan, Muhammad Fakhir; Taj, Murtaza; Mahmood, Arif. "Statistically correlated multi-task learning for autonomous driving." (2021). Neural Computing & Applications 33(9) 12921-12938.
+
+Lu Xu, Chen Hu, Kuizhi Mei. "Semi-supervised regression with manifold: A Bayesian deep kernel learning approach." (2022) Neurocomputing (497), 76-85.
 
 Riboni, A; Ghioldi, N.; Candelieri, A; Borrotti, M. "Bayesian optimization and deep learning for steering wheel angle prediction." (2022) Sci. Rep., 12(1)
 
