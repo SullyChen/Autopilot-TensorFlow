@@ -36,6 +36,7 @@ while(cv2.waitKey(10) != ord('q')):
     dst = cv2.warpAffine(img,M,(cols,rows))
     cv2.imshow("steering wheel", dst)
     i += 1
+
     time.sleep(0.04)
 
 cv2.destroyAllWindows()
