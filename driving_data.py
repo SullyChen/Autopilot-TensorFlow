@@ -2,6 +2,7 @@ import cv2
 import random
 import numpy as np
 
+
 xs = []
 ys = []
 
@@ -16,7 +17,15 @@ with open("driving_dataset/data.txt") as f:
         #the paper by Nvidia uses the inverse of the turning radius,
         #but steering wheel angle is proportional to the inverse of turning radius
         #so the steering wheel angle in radians is used as the output
-        ys.append(float(line.split()[1]) * 3.14159265 / 180)
+        # Assuming the value you want to convert is in line.split()[1]
+        raw_value = line.split()[1]
+
+        # Extract only the numeric part (remove the comma and year)
+        numeric_part = raw_value.split(',')[0]
+
+        # Convert the numeric part to a float
+        ys.append(float(numeric_part) * 3.14159265 / 180)
+
 
 #get number of images
 num_images = len(xs)
