@@ -4,6 +4,7 @@ import model
 import cv2
 from subprocess import call
 import os
+import time
 
 #check if on windows OS
 windows = False
@@ -35,5 +36,7 @@ while(cv2.waitKey(10) != ord('q')):
     dst = cv2.warpAffine(img,M,(cols,rows))
     cv2.imshow("steering wheel", dst)
     i += 1
+
+    time.sleep(0.04)
 
 cv2.destroyAllWindows()
